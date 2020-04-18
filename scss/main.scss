@@ -6,6 +6,10 @@
 
 $color-primary: #34495D;
 
+*{
+  padding: 0;
+}
+
 a{
   color: #34495D;
 }
@@ -77,6 +81,10 @@ body{
 
 }
 
+html, body{
+  height: 100%;
+}
+
 .navbar{
   padding: 25px 30px;
   background: $color-primary;
@@ -91,4 +99,46 @@ body{
   @extend .measure-wide, .center;
 }
 
+.small{
+  font-size: 0.8em;
+}
 
+$footer-height: 75px;
+
+#container{
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+}
+
+#footer, #container:after{
+  height: $footer-height;
+}
+
+#container:after{
+  content: "";
+  display: block;
+}
+
+#footer{
+  background-color: #F2F3F3;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-top:20px;
+  font-size:14px;
+  text-align:center;
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      padding-right: 10px;
+      font-weight: bold;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #898C8F;
+    &:hover {
+    text-decoration:underline;
+    }
+  }
+}
