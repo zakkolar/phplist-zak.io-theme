@@ -1,0 +1,19 @@
+{
+  "name": "phplist-zak.io",
+  "version": "1.0.0",
+  "description": "A theme for the public-facing pages on the Zak.io phplist pages",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss   style.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "tachyons-sass": "^4.9.5"
+  }
+}

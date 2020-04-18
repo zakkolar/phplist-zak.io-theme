@@ -1,0 +1,94 @@
+/* be sure to include the following in the HTML:
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+ */
+
+@import "node_modules/tachyons-sass/tachyons";
+
+$color-primary: #34495D;
+
+a{
+  color: #34495D;
+}
+
+h1 {
+  font-size:  2.441em;
+}
+h2 {
+  font-size: 1.953em;
+}
+
+h3 {
+  font-size: 1.563em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+//h1, h2, h3, h4, h5, h6{
+//  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+//"Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+//  font-weight: normal;
+//}
+
+
+.alert-danger, .required{
+  color: #ab0008;
+}
+.alert-success{
+  @extend .dark-green;
+}
+
+.btn{
+  @extend .no-underline, .dim, .ph3, .pv2, .mv2, .dib, .white, .bg-black, .bn, .pointer;
+}
+.btn-primary{
+  background-color: $color-primary;
+}
+.btn-default{
+ background-color: #a7a7a7;
+}
+
+input[type="text"]{
+  margin-top:10px;
+}
+
+.btn-danger{
+  @extend .bg-dark-red;
+}
+
+.radio-inline{
+  @extend .dib, .mr1;
+}
+
+body{
+ font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+ "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  width: 100%;
+  font-size: 16px;
+
+}
+
+.navbar{
+  padding: 25px 30px;
+  background: $color-primary;
+  a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.well{
+  @extend .measure-wide, .center;
+}
+
+
